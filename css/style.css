@@ -7,7 +7,7 @@
 .container{
     height: calc( 100vh - 80px);
     width: 100%;
-    background-color: aquamarine;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -23,19 +23,44 @@
     
 }
 .display img{
-    width: calc(100% / 7);
-    height: calc(100vh / 5);
-    /* margin-right: 10px; */
+    min-width: 250px;
+   height: calc(100vh / 5);
+    
+    /* width: calc(100% / 7); */
 }
 
 .call-bar{
     height: 80px;
     width: 100%;
-    background-color: aqua;
-    font-size: 3em;
+    background-color: #222222;
+    color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .left-bar{
-    justify-content: start;
+    /* justify-content: start; */
+    display: flex;
+    gap: 10px;
+}
+.left-bar section,.center-bar section{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.center-bar{
+    /* justify-content: center; */
+    display: flex;
+    gap: 10px;
+}
+
+.right-bar{
+    display: flex;
+}
+.right-bar button{
+    padding: 30px;
+    border: 0;
+    color: red;
+    background-color: #4a4a4a;
 }
