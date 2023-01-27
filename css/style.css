@@ -5,10 +5,37 @@
 }
 
 .container{
-    height: 100vh;
+    height: calc( 100vh - 80px);
     width: 100%;
     background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow-y: auto;
 }
 .display{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+    gap: 10px;
+    
+}
+.display img{
+    width: calc(100% / 7);
+    height: calc(100vh / 5);
+    /* margin-right: 10px; */
+}
+
+.call-bar{
+    height: 80px;
+    width: 100%;
+    background-color: aqua;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+}
+.left-bar{
+    justify-content: start;
 }
